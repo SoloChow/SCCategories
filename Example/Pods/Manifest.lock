@@ -1,0 +1,421 @@
+PODS:
+  - SCCategories (0.1.7):
+    - SCCategories/CoreGraphic (= 0.1.7)
+    - SCCategories/Foundation (= 0.1.7)
+    - SCCategories/Macro (= 0.1.7)
+    - SCCategories/QuartzCore (= 0.1.7)
+    - SCCategories/UIKit (= 0.1.7)
+  - SCCategories/CoreGraphic (0.1.7)
+  - SCCategories/Foundation (0.1.7):
+    - SCCategories/Foundation/NSArray (= 0.1.7)
+    - SCCategories/Foundation/NSAttributedString (= 0.1.7)
+    - SCCategories/Foundation/NSBundle (= 0.1.7)
+    - SCCategories/Foundation/NSCalendar (= 0.1.7)
+    - SCCategories/Foundation/NSData (= 0.1.7)
+    - SCCategories/Foundation/NSDate (= 0.1.7)
+    - SCCategories/Foundation/NSDecimalNumber (= 0.1.7)
+    - SCCategories/Foundation/NSDictionary (= 0.1.7)
+    - SCCategories/Foundation/NSFileManager (= 0.1.7)
+    - SCCategories/Foundation/NSIndexPath (= 0.1.7)
+    - SCCategories/Foundation/NSJSSCSerialization (= 0.1.7)
+    - SCCategories/Foundation/NSKeyedArchiver (= 0.1.7)
+    - SCCategories/Foundation/NSNotificationCenter (= 0.1.7)
+    - SCCategories/Foundation/NSNumber (= 0.1.7)
+    - SCCategories/Foundation/NSObject (= 0.1.7)
+    - SCCategories/Foundation/NSParagraphStyle (= 0.1.7)
+    - SCCategories/Foundation/NSSet (= 0.1.7)
+    - SCCategories/Foundation/NSString (= 0.1.7)
+    - SCCategories/Foundation/NSThread (= 0.1.7)
+    - SCCategories/Foundation/NSTimer (= 0.1.7)
+    - SCCategories/Foundation/NSURLComponents (= 0.1.7)
+    - SCCategories/Foundation/NSValue (= 0.1.7)
+  - SCCategories/Foundation/NSArray (0.1.7):
+    - "SCCategories/Foundation/NSArray/NSArray+SCBase (= 0.1.7)"
+    - "SCCategories/Foundation/NSArray/NSArray+SCJSSCArray (= 0.1.7)"
+    - "SCCategories/Foundation/NSArray/NSArray+SCPropertyList (= 0.1.7)"
+    - "SCCategories/Foundation/NSArray/NSArray+SCSort (= 0.1.7)"
+  - "SCCategories/Foundation/NSArray/NSArray+SCBase (0.1.7)"
+  - "SCCategories/Foundation/NSArray/NSArray+SCJSSCArray (0.1.7)"
+  - "SCCategories/Foundation/NSArray/NSArray+SCPropertyList (0.1.7)":
+    - "SCCategories/Foundation/NSData/NSData+SCBase"
+  - "SCCategories/Foundation/NSArray/NSArray+SCSort (0.1.7)"
+  - SCCategories/Foundation/NSAttributedString (0.1.7):
+    - "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCBase (= 0.1.7)"
+    - "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCCreation (= 0.1.7)"
+    - "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCMask (= 0.1.7)"
+    - "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCParagraphStyleAttributes (= 0.1.7)"
+  - "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSValue/NSValue+SCBase"
+  - "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCCreation (0.1.7)":
+    - "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCBase"
+  - "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCMask (0.1.7)":
+    - "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCBase"
+    - "SCCategories/Foundation/NSValue/NSValue+SCBase"
+  - "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCParagraphStyleAttributes (0.1.7)":
+    - "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCBase"
+  - SCCategories/Foundation/NSBundle (0.1.7):
+    - "SCCategories/Foundation/NSBundle/NSBundle+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSBundle/NSBundle+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSCalendar (0.1.7):
+    - "SCCategories/Foundation/NSCalendar/NSCalendar+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSCalendar/NSCalendar+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSData (0.1.7):
+    - "SCCategories/Foundation/NSData/NSData+SCBase (= 0.1.7)"
+    - "SCCategories/Foundation/NSData/NSData+SCBase64 (= 0.1.7)"
+    - "SCCategories/Foundation/NSData/NSData+SCEncryptAndDecrypt (= 0.1.7)"
+    - "SCCategories/Foundation/NSData/NSData+SCHash (= 0.1.7)"
+    - "SCCategories/Foundation/NSData/NSData+SCJSSCValue (= 0.1.7)"
+    - "SCCategories/Foundation/NSData/NSData+SCPackAndUnpack (= 0.1.7)"
+  - "SCCategories/Foundation/NSData/NSData+SCBase (0.1.7)"
+  - "SCCategories/Foundation/NSData/NSData+SCBase64 (0.1.7)"
+  - "SCCategories/Foundation/NSData/NSData+SCEncryptAndDecrypt (0.1.7)"
+  - "SCCategories/Foundation/NSData/NSData+SCHash (0.1.7)"
+  - "SCCategories/Foundation/NSData/NSData+SCJSSCValue (0.1.7)"
+  - "SCCategories/Foundation/NSData/NSData+SCPackAndUnpack (0.1.7)"
+  - SCCategories/Foundation/NSDate (0.1.7):
+    - "SCCategories/Foundation/NSDate/NSDate+SCBase (= 0.1.7)"
+    - "SCCategories/Foundation/NSDate/NSDate+SCDateFormat (= 0.1.7)"
+  - "SCCategories/Foundation/NSDate/NSDate+SCBase (0.1.7)"
+  - "SCCategories/Foundation/NSDate/NSDate+SCDateFormat (0.1.7)"
+  - SCCategories/Foundation/NSDecimalNumber (0.1.7):
+    - "SCCategories/Foundation/NSDecimalNumber/NSDecimalNumber+SCBase (= 0.1.7)"
+    - "SCCategories/Foundation/NSDecimalNumber/NSDecimalNumber+SCRoundNumber (= 0.1.7)"
+  - "SCCategories/Foundation/NSDecimalNumber/NSDecimalNumber+SCBase (0.1.7)"
+  - "SCCategories/Foundation/NSDecimalNumber/NSDecimalNumber+SCRoundNumber (0.1.7)"
+  - SCCategories/Foundation/NSDictionary (0.1.7):
+    - "SCCategories/Foundation/NSDictionary/NSDictionary+SCBase (= 0.1.7)"
+    - "SCCategories/Foundation/NSDictionary/NSDictionary+SCJSSCDictionary (= 0.1.7)"
+    - "SCCategories/Foundation/NSDictionary/NSDictionary+SCPropertyList (= 0.1.7)"
+  - "SCCategories/Foundation/NSDictionary/NSDictionary+SCBase (0.1.7)"
+  - "SCCategories/Foundation/NSDictionary/NSDictionary+SCJSSCDictionary (0.1.7)"
+  - "SCCategories/Foundation/NSDictionary/NSDictionary+SCPropertyList (0.1.7)":
+    - "SCCategories/Foundation/NSData/NSData+SCBase"
+  - SCCategories/Foundation/NSFileManager (0.1.7):
+    - "SCCategories/Foundation/NSFileManager/NSFileManager+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSFileManager/NSFileManager+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSIndexPath (0.1.7):
+    - "SCCategories/Foundation/NSIndexPath/NSIndexPath+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSIndexPath/NSIndexPath+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSJSSCSerialization (0.1.7):
+    - "SCCategories/Foundation/NSJSSCSerialization/NSJSSCSerialization+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSJSSCSerialization/NSJSSCSerialization+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSKeyedArchiver (0.1.7):
+    - "SCCategories/Foundation/NSKeyedArchiver/NSKeyedArchiver+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSKeyedArchiver/NSKeyedArchiver+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSNotificationCenter (0.1.7):
+    - "SCCategories/Foundation/NSNotificationCenter/NSNotificationCenter+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSNotificationCenter/NSNotificationCenter+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSNumber (0.1.7):
+    - "SCCategories/Foundation/NSNumber/NSNumber+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSNumber/NSNumber+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSObject (0.1.7):
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue (= 0.1.7)"
+    - "SCCategories/Foundation/NSObject/NSObject+SCBase (= 0.1.7)"
+    - "SCCategories/Foundation/NSObject/NSObject+SCKeyValueCoding (= 0.1.7)"
+    - "SCCategories/Foundation/NSObject/NSObject+SCKeyValueObserving (= 0.1.7)"
+    - "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod (= 0.1.7)"
+  - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue (0.1.7)"
+  - "SCCategories/Foundation/NSObject/NSObject+SCBase (0.1.7)"
+  - "SCCategories/Foundation/NSObject/NSObject+SCKeyValueCoding (0.1.7)"
+  - "SCCategories/Foundation/NSObject/NSObject+SCKeyValueObserving (0.1.7)":
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue"
+  - "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod (0.1.7)"
+  - SCCategories/Foundation/NSParagraphStyle (0.1.7):
+    - "SCCategories/Foundation/NSParagraphStyle/NSParagraphStyle+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSParagraphStyle/NSParagraphStyle+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSSet (0.1.7):
+    - "SCCategories/Foundation/NSSet/NSSet+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSSet/NSSet+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSString (0.1.7):
+    - "SCCategories/Foundation/NSString/NSString+SCBase (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCBase64String (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCCheck (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCChinese (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCDrawing (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCEmoji (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCHashString (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCNumberValue (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCPathString (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCPinyin (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCRegularExpression (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCRoundNumberString (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCSecurityString (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCTrimming (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCURLString (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCUTF32String (= 0.1.7)"
+    - "SCCategories/Foundation/NSString/NSString+SCUUIDString (= 0.1.7)"
+  - "SCCategories/Foundation/NSString/NSString+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSData/NSData+SCBase"
+  - "SCCategories/Foundation/NSString/NSString+SCBase64String (0.1.7)":
+    - "SCCategories/Foundation/NSData/NSData+SCBase64"
+  - "SCCategories/Foundation/NSString/NSString+SCCheck (0.1.7)":
+    - "SCCategories/Foundation/NSDictionary/NSDictionary+SCBase"
+    - "SCCategories/Foundation/NSString/NSString+SCBase"
+    - "SCCategories/Foundation/NSString/NSString+SCRegularExpression"
+  - "SCCategories/Foundation/NSString/NSString+SCChinese (0.1.7)":
+    - "SCCategories/Foundation/NSString/NSString+SCRegularExpression"
+  - "SCCategories/Foundation/NSString/NSString+SCDrawing (0.1.7)"
+  - "SCCategories/Foundation/NSString/NSString+SCEmoji (0.1.7)":
+    - "SCCategories/Foundation/NSString/NSString+SCBase"
+    - "SCCategories/Foundation/NSString/NSString+SCRegularExpression"
+  - "SCCategories/Foundation/NSString/NSString+SCHashString (0.1.7)":
+    - "SCCategories/Foundation/NSData/NSData+SCHash"
+  - "SCCategories/Foundation/NSString/NSString+SCNumberValue (0.1.7)":
+    - "SCCategories/Foundation/NSNumber/NSNumber+SCBase"
+  - "SCCategories/Foundation/NSString/NSString+SCPathString (0.1.7)"
+  - "SCCategories/Foundation/NSString/NSString+SCPinyin (0.1.7)"
+  - "SCCategories/Foundation/NSString/NSString+SCRegularExpression (0.1.7)"
+  - "SCCategories/Foundation/NSString/NSString+SCRoundNumberString (0.1.7)":
+    - "SCCategories/Foundation/NSDecimalNumber/NSDecimalNumber+SCRoundNumber"
+  - "SCCategories/Foundation/NSString/NSString+SCSecurityString (0.1.7)":
+    - "SCCategories/Foundation/NSString/NSString+SCBase"
+  - "SCCategories/Foundation/NSString/NSString+SCTrimming (0.1.7)":
+    - "SCCategories/Foundation/NSString/NSString+SCRegularExpression"
+  - "SCCategories/Foundation/NSString/NSString+SCURLString (0.1.7)"
+  - "SCCategories/Foundation/NSString/NSString+SCUTF32String (0.1.7)"
+  - "SCCategories/Foundation/NSString/NSString+SCUUIDString (0.1.7)"
+  - SCCategories/Foundation/NSThread (0.1.7):
+    - "SCCategories/Foundation/NSThread/NSThread+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSThread/NSThread+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSTimer (0.1.7):
+    - "SCCategories/Foundation/NSTimer/NSTimer+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSTimer/NSTimer+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSURLComponents (0.1.7):
+    - "SCCategories/Foundation/NSURLComponents/NSURLComponents+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSURLComponents/NSURLComponents+SCBase (0.1.7)"
+  - SCCategories/Foundation/NSValue (0.1.7):
+    - "SCCategories/Foundation/NSValue/NSValue+SCBase (= 0.1.7)"
+  - "SCCategories/Foundation/NSValue/NSValue+SCBase (0.1.7)"
+  - SCCategories/Macro (0.1.7)
+  - SCCategories/QuartzCore (0.1.7):
+    - SCCategories/QuartzCore/CALayer (= 0.1.7)
+  - SCCategories/QuartzCore/CALayer (0.1.7):
+    - "SCCategories/QuartzCore/CALayer/CALayer+SCBase (= 0.1.7)"
+    - "SCCategories/QuartzCore/CALayer/CALayer+SCFadeAnimation (= 0.1.7)"
+    - "SCCategories/QuartzCore/CALayer/CALayer+SCLayout (= 0.1.7)"
+    - "SCCategories/QuartzCore/CALayer/CALayer+SCShadow (= 0.1.7)"
+    - "SCCategories/QuartzCore/CALayer/CALayer+SCSnapshot (= 0.1.7)"
+    - "SCCategories/QuartzCore/CALayer/CALayer+SCTransform (= 0.1.7)"
+  - "SCCategories/QuartzCore/CALayer/CALayer+SCBase (0.1.7)":
+    - SCCategories/CoreGraphic
+  - "SCCategories/QuartzCore/CALayer/CALayer+SCFadeAnimation (0.1.7)"
+  - "SCCategories/QuartzCore/CALayer/CALayer+SCLayout (0.1.7)"
+  - "SCCategories/QuartzCore/CALayer/CALayer+SCShadow (0.1.7)"
+  - "SCCategories/QuartzCore/CALayer/CALayer+SCSnapshot (0.1.7)"
+  - "SCCategories/QuartzCore/CALayer/CALayer+SCTransform (0.1.7)"
+  - SCCategories/UIKit (0.1.7):
+    - SCCategories/UIKit/UIApplication (= 0.1.7)
+    - SCCategories/UIKit/UIBarButtonItem (= 0.1.7)
+    - SCCategories/UIKit/UIBezierPath (= 0.1.7)
+    - SCCategories/UIKit/UIButton (= 0.1.7)
+    - SCCategories/UIKit/UICollectionView (= 0.1.7)
+    - SCCategories/UIKit/UICollectionViewFlowLayout (= 0.1.7)
+    - SCCategories/UIKit/UIColor (= 0.1.7)
+    - SCCategories/UIKit/UIControl (= 0.1.7)
+    - SCCategories/UIKit/UIDevice (= 0.1.7)
+    - SCCategories/UIKit/UIFont (= 0.1.7)
+    - SCCategories/UIKit/UIGestureRecognizer (= 0.1.7)
+    - SCCategories/UIKit/UIImage (= 0.1.7)
+    - SCCategories/UIKit/UINavigationBar (= 0.1.7)
+    - SCCategories/UIKit/UINavigationController (= 0.1.7)
+    - SCCategories/UIKit/UIScreen (= 0.1.7)
+    - SCCategories/UIKit/UIScrollView (= 0.1.7)
+    - SCCategories/UIKit/UISlider (= 0.1.7)
+    - SCCategories/UIKit/UISwipeGestureRecognizer (= 0.1.7)
+    - SCCategories/UIKit/UITabBar (= 0.1.7)
+    - SCCategories/UIKit/UITableView (= 0.1.7)
+    - SCCategories/UIKit/UITableViewCell (= 0.1.7)
+    - SCCategories/UIKit/UITextField (= 0.1.7)
+    - SCCategories/UIKit/UITextView (= 0.1.7)
+    - SCCategories/UIKit/UIView (= 0.1.7)
+    - SCCategories/UIKit/UIViewController (= 0.1.7)
+  - SCCategories/UIKit/UIApplication (0.1.7):
+    - "SCCategories/UIKit/UIApplication/UIApplication+SCBase (= 0.1.7)"
+    - "SCCategories/UIKit/UIApplication/UIApplication+SCNetworkActivityIndicator (= 0.1.7)"
+    - "SCCategories/UIKit/UIApplication/UIApplication+SCTopViewController (= 0.1.7)"
+  - "SCCategories/UIKit/UIApplication/UIApplication+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSString/NSString+SCPathString"
+    - "SCCategories/UIKit/UIDevice/UIDevice+SCBase"
+  - "SCCategories/UIKit/UIApplication/UIApplication+SCNetworkActivityIndicator (0.1.7)":
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue"
+  - "SCCategories/UIKit/UIApplication/UIApplication+SCTopViewController (0.1.7)"
+  - SCCategories/UIKit/UIBarButtonItem (0.1.7):
+    - "SCCategories/UIKit/UIBarButtonItem/UIBarButtonItem+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UIBarButtonItem/UIBarButtonItem+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue"
+    - "SCCategories/UIKit/UIControl/UIControl+SCBase"
+    - "SCCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+SCBase"
+    - "SCCategories/UIKit/UIView/UIView+SCLayout"
+  - SCCategories/UIKit/UIBezierPath (0.1.7):
+    - "SCCategories/UIKit/UIBezierPath/UIBezierPath+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UIBezierPath/UIBezierPath+SCBase (0.1.7)"
+  - SCCategories/UIKit/UIButton (0.1.7):
+    - "SCCategories/UIKit/UIButton/UIButton+SCBase (= 0.1.7)"
+    - "SCCategories/UIKit/UIButton/UIButton+SCConfigureForState (= 0.1.7)"
+    - "SCCategories/UIKit/UIButton/UIButton+SCCountDown (= 0.1.7)"
+  - "SCCategories/UIKit/UIButton/UIButton+SCBase (0.1.7)"
+  - "SCCategories/UIKit/UIButton/UIButton+SCConfigureForState (0.1.7)":
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue"
+    - "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod"
+  - "SCCategories/UIKit/UIButton/UIButton+SCCountDown (0.1.7)":
+    - "SCCategories/UIKit/UIView/UIView+SCCountDown"
+  - SCCategories/UIKit/UICollectionView (0.1.7):
+    - "SCCategories/UIKit/UICollectionView/UICollectionView+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UICollectionView/UICollectionView+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSArray/NSArray+SCSort"
+  - SCCategories/UIKit/UICollectionViewFlowLayout (0.1.7):
+    - "SCCategories/UIKit/UICollectionViewFlowLayout/UICollectionViewFlowLayout+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UICollectionViewFlowLayout/UICollectionViewFlowLayout+SCBase (0.1.7)"
+  - SCCategories/UIKit/UIColor (0.1.7):
+    - "SCCategories/UIKit/UIColor/UIColor+SCBase (= 0.1.7)"
+    - "SCCategories/UIKit/UIColor/UIColor+SCCMYKColor (= 0.1.7)"
+    - "SCCategories/UIKit/UIColor/UIColor+SCColorConvert (= 0.1.7)"
+    - "SCCategories/UIKit/UIColor/UIColor+SCHSBColor (= 0.1.7)"
+    - "SCCategories/UIKit/UIColor/UIColor+SCHSLColor (= 0.1.7)"
+  - "SCCategories/UIKit/UIColor/UIColor+SCBase (0.1.7)"
+  - "SCCategories/UIKit/UIColor/UIColor+SCCMYKColor (0.1.7)":
+    - "SCCategories/UIKit/UIColor/UIColor+SCColorConvert"
+  - "SCCategories/UIKit/UIColor/UIColor+SCColorConvert (0.1.7)"
+  - "SCCategories/UIKit/UIColor/UIColor+SCHSBColor (0.1.7)":
+    - "SCCategories/UIKit/UIColor/UIColor+SCColorConvert"
+  - "SCCategories/UIKit/UIColor/UIColor+SCHSLColor (0.1.7)":
+    - "SCCategories/UIKit/UIColor/UIColor+SCColorConvert"
+  - SCCategories/UIKit/UIControl (0.1.7):
+    - "SCCategories/UIKit/UIControl/UIControl+SCBase (= 0.1.7)"
+    - "SCCategories/UIKit/UIControl/UIControl+SCRepeatClickPrevention (= 0.1.7)"
+  - "SCCategories/UIKit/UIControl/UIControl+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue"
+  - "SCCategories/UIKit/UIControl/UIControl+SCRepeatClickPrevention (0.1.7)":
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue"
+    - "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod"
+  - SCCategories/UIKit/UIDevice (0.1.7):
+    - "SCCategories/UIKit/UIDevice/UIDevice+SCBase (= 0.1.7)"
+    - "SCCategories/UIKit/UIDevice/UIDevice+SCCPUInfo (= 0.1.7)"
+    - "SCCategories/UIKit/UIDevice/UIDevice+SCDiskInfo (= 0.1.7)"
+    - "SCCategories/UIKit/UIDevice/UIDevice+SCMemoryInfo (= 0.1.7)"
+    - "SCCategories/UIKit/UIDevice/UIDevice+SCNetworkInfo (= 0.1.7)"
+    - "SCCategories/UIKit/UIDevice/UIDevice+SCSIMInfo (= 0.1.7)"
+  - "SCCategories/UIKit/UIDevice/UIDevice+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSNumber/NSNumber+SCBase"
+    - "SCCategories/Foundation/NSString/NSString+SCUUIDString"
+  - "SCCategories/UIKit/UIDevice/UIDevice+SCCPUInfo (0.1.7)"
+  - "SCCategories/UIKit/UIDevice/UIDevice+SCDiskInfo (0.1.7)"
+  - "SCCategories/UIKit/UIDevice/UIDevice+SCMemoryInfo (0.1.7)"
+  - "SCCategories/UIKit/UIDevice/UIDevice+SCNetworkInfo (0.1.7)"
+  - "SCCategories/UIKit/UIDevice/UIDevice+SCSIMInfo (0.1.7)"
+  - SCCategories/UIKit/UIFont (0.1.7):
+    - "SCCategories/UIKit/UIFont/UIFont+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UIFont/UIFont+SCBase (0.1.7)"
+  - SCCategories/UIKit/UIGestureRecognizer (0.1.7):
+    - "SCCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue"
+  - SCCategories/UIKit/UIImage (0.1.7):
+    - "SCCategories/UIKit/UIImage/UIImage+SCBase (= 0.1.7)"
+    - "SCCategories/UIKit/UIImage/UIImage+SCBlurredImage (= 0.1.7)"
+    - "SCCategories/UIKit/UIImage/UIImage+SCColoredImage (= 0.1.7)"
+    - "SCCategories/UIKit/UIImage/UIImage+SCEmojiImage (= 0.1.7)"
+    - "SCCategories/UIKit/UIImage/UIImage+SCGIFImage (= 0.1.7)"
+    - "SCCategories/UIKit/UIImage/UIImage+SCGradientImage (= 0.1.7)"
+    - "SCCategories/UIKit/UIImage/UIImage+SCImageBorder (= 0.1.7)"
+    - "SCCategories/UIKit/UIImage/UIImage+SCImageCompression (= 0.1.7)"
+    - "SCCategories/UIKit/UIImage/UIImage+SCImageCropped (= 0.1.7)"
+    - "SCCategories/UIKit/UIImage/UIImage+SCImageFixed (= 0.1.7)"
+    - "SCCategories/UIKit/UIImage/UIImage+SCImageRotation (= 0.1.7)"
+    - "SCCategories/UIKit/UIImage/UIImage+SCRoundedImage (= 0.1.7)"
+  - "SCCategories/UIKit/UIImage/UIImage+SCBase (0.1.7)":
+    - SCCategories/CoreGraphic
+  - "SCCategories/UIKit/UIImage/UIImage+SCBlurredImage (0.1.7)"
+  - "SCCategories/UIKit/UIImage/UIImage+SCColoredImage (0.1.7)"
+  - "SCCategories/UIKit/UIImage/UIImage+SCEmojiImage (0.1.7)":
+    - "SCCategories/Foundation/NSString/NSString+SCEmoji"
+  - "SCCategories/UIKit/UIImage/UIImage+SCGIFImage (0.1.7)"
+  - "SCCategories/UIKit/UIImage/UIImage+SCGradientImage (0.1.7)"
+  - "SCCategories/UIKit/UIImage/UIImage+SCImageBorder (0.1.7)"
+  - "SCCategories/UIKit/UIImage/UIImage+SCImageCompression (0.1.7)":
+    - "SCCategories/UIKit/UIImage/UIImage+SCBase"
+  - "SCCategories/UIKit/UIImage/UIImage+SCImageCropped (0.1.7)"
+  - "SCCategories/UIKit/UIImage/UIImage+SCImageFixed (0.1.7)"
+  - "SCCategories/UIKit/UIImage/UIImage+SCImageRotation (0.1.7)":
+    - SCCategories/CoreGraphic
+  - "SCCategories/UIKit/UIImage/UIImage+SCRoundedImage (0.1.7)":
+    - SCCategories/CoreGraphic
+  - SCCategories/UIKit/UINavigationBar (0.1.7):
+    - "SCCategories/UIKit/UINavigationBar/UINavigationBar+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UINavigationBar/UINavigationBar+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue"
+    - "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod"
+  - SCCategories/UIKit/UINavigationController (0.1.7):
+    - "SCCategories/UIKit/UINavigationController/UINavigationController+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UINavigationController/UINavigationController+SCBase (0.1.7)"
+  - SCCategories/UIKit/UIScreen (0.1.7):
+    - "SCCategories/UIKit/UIScreen/UIScreen+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UIScreen/UIScreen+SCBase (0.1.7)":
+    - "SCCategories/UIKit/UIDevice/UIDevice+SCBase"
+  - SCCategories/UIKit/UIScrollView (0.1.7):
+    - "SCCategories/UIKit/UIScrollView/UIScrollView+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UIScrollView/UIScrollView+SCBase (0.1.7)":
+    - SCCategories/CoreGraphic
+  - SCCategories/UIKit/UISlider (0.1.7):
+    - "SCCategories/UIKit/UISlider/UISlider+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UISlider/UISlider+SCBase (0.1.7)"
+  - SCCategories/UIKit/UISwipeGestureRecognizer (0.1.7):
+    - "SCCategories/UIKit/UISwipeGestureRecognizer/UISwipeGestureRecognizer+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UISwipeGestureRecognizer/UISwipeGestureRecognizer+SCBase (0.1.7)":
+    - "SCCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+SCBase"
+  - SCCategories/UIKit/UITabBar (0.1.7):
+    - "SCCategories/UIKit/UITabBar/UITabBar+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UITabBar/UITabBar+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue"
+    - "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod"
+  - SCCategories/UIKit/UITableView (0.1.7):
+    - "SCCategories/UIKit/UITableView/UITableView+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UITableView/UITableView+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSArray/NSArray+SCSort"
+  - SCCategories/UIKit/UITableViewCell (0.1.7):
+    - "SCCategories/UIKit/UITableViewCell/UITableViewCell+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UITableViewCell/UITableViewCell+SCBase (0.1.7)":
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue"
+  - SCCategories/UIKit/UITextField (0.1.7):
+    - "SCCategories/UIKit/UITextField/UITextField+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UITextField/UITextField+SCBase (0.1.7)"
+  - SCCategories/UIKit/UITextView (0.1.7):
+    - "SCCategories/UIKit/UITextView/UITextView+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UITextView/UITextView+SCBase (0.1.7)"
+  - SCCategories/UIKit/UIView (0.1.7):
+    - "SCCategories/UIKit/UIView/UIView+SCBase (= 0.1.7)"
+    - "SCCategories/UIKit/UIView/UIView+SCCountDown (= 0.1.7)"
+    - "SCCategories/UIKit/UIView/UIView+SCLayout (= 0.1.7)"
+    - "SCCategories/UIKit/UIView/UIView+SCNibView (= 0.1.7)"
+    - "SCCategories/UIKit/UIView/UIView+SCShadow (= 0.1.7)"
+    - "SCCategories/UIKit/UIView/UIView+SCShakeAnimation (= 0.1.7)"
+    - "SCCategories/UIKit/UIView/UIView+SCSnapshot (= 0.1.7)"
+    - "SCCategories/UIKit/UIView/UIView+SCTouchInset (= 0.1.7)"
+  - "SCCategories/UIKit/UIView/UIView+SCBase (0.1.7)"
+  - "SCCategories/UIKit/UIView/UIView+SCCountDown (0.1.7)"
+  - "SCCategories/UIKit/UIView/UIView+SCLayout (0.1.7)":
+    - "SCCategories/UIKit/UIView/UIView+SCBase"
+  - "SCCategories/UIKit/UIView/UIView+SCNibView (0.1.7)"
+  - "SCCategories/UIKit/UIView/UIView+SCShadow (0.1.7)"
+  - "SCCategories/UIKit/UIView/UIView+SCShakeAnimation (0.1.7)"
+  - "SCCategories/UIKit/UIView/UIView+SCSnapshot (0.1.7)"
+  - "SCCategories/UIKit/UIView/UIView+SCTouchInset (0.1.7)":
+    - "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue"
+    - "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod"
+  - SCCategories/UIKit/UIViewController (0.1.7):
+    - "SCCategories/UIKit/UIViewController/UIViewController+SCBase (= 0.1.7)"
+  - "SCCategories/UIKit/UIViewController/UIViewController+SCBase (0.1.7)"
+
+DEPENDENCIES:
+  - SCCategories (from `../`)
+
+EXTERNAL SOURCES:
+  SCCategories:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SCCategories: 206ec9c9288f6363dbefdfe7dc98890529a5cc76
+
+PODFILE CHECKSUM: d34aa492ef64a0604179ee2e4ca14037bfdcc823
+
+COCOAPODS: 1.6.1

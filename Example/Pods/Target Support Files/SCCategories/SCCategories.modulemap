@@ -1,0 +1,6 @@
+framework module SCCategories {
+  umbrella header "SCCategories-umbrella.h"
+
+  export *
+  module * { export * }
+}

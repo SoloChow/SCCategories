@@ -1,0 +1,1113 @@
+{
+  "name": "SCCategories",
+  "version": "0.1.7",
+  "summary": "Cocoa框架基础分类组件",
+  "homepage": "http://gitlab.2beauti.com/iOS/SCCategories",
+  "license": "proprietary",
+  "authors": {
+    "Solo": "solo_zhou@mysc.cc"
+  },
+  "source": {
+    "git": "git@gitlab.2beauti.com:iOS/SCCategories.git",
+    "tag": "0.1.7"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "public_header_files": "SCCategories/Classes/SCCategories.h",
+  "source_files": "SCCategories/Classes/SCCategories.h",
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "QuartzCore",
+    "CoreGraphics"
+  ],
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Foundation",
+      "subspecs": [
+        {
+          "name": "NSArray",
+          "source_files": "SCCategories/Classes/Foundation/NSArray/NSArray+SCCategories.h",
+          "subspecs": [
+            {
+              "name": "NSArray+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSArray/NSArray+SCBase.{h,m}"
+            },
+            {
+              "name": "NSArray+SCJSSCArray",
+              "source_files": "SCCategories/Classes/Foundation/NSArray/NSArray+SCJSSCArray.{h,m}"
+            },
+            {
+              "name": "NSArray+SCPropertyList",
+              "dependencies": {
+                "SCCategories/Foundation/NSData/NSData+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSArray/NSArray+SCPropertyList.{h,m}"
+            },
+            {
+              "name": "NSArray+SCSort",
+              "source_files": "SCCategories/Classes/Foundation/NSArray/NSArray+SCSort.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSAttributedString",
+          "source_files": "SCCategories/Classes/Foundation/NSAttributedString/NSAttributedString+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSAttributedString+SCBase",
+              "frameworks": [
+                "UIKit",
+                "CoreText"
+              ],
+              "dependencies": {
+                "SCCategories/Foundation/NSValue/NSValue+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSAttributedString/NSAttributedString+SCBase.{h,m}"
+            },
+            {
+              "name": "NSAttributedString+SCCreation",
+              "frameworks": "UIKit",
+              "dependencies": {
+                "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSAttributedString/NSAttributedString+SCCreation.{h,m}"
+            },
+            {
+              "name": "NSAttributedString+SCMask",
+              "frameworks": "UIKit",
+              "dependencies": {
+                "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCBase": [
+
+                ],
+                "SCCategories/Foundation/NSValue/NSValue+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSAttributedString/NSAttributedString+SCMask.{h,m}"
+            },
+            {
+              "name": "NSAttributedString+SCParagraphStyleAttributes",
+              "frameworks": "UIKit",
+              "dependencies": {
+                "SCCategories/Foundation/NSAttributedString/NSAttributedString+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSAttributedString/NSAttributedString+SCParagraphStyleAttributes.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSBundle",
+          "source_files": "SCCategories/Classes/Foundation/NSBundle/NSBundle+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSBundle+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSBundle/NSBundle+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSCalendar",
+          "source_files": "SCCategories/Classes/Foundation/NSCalendar/NSCalendar+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSCalendar+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSCalendar/NSCalendar+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSData",
+          "source_files": "SCCategories/Classes/Foundation/NSData/NSData+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSData+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSData/NSData+SCBase.{h,m}"
+            },
+            {
+              "name": "NSData+SCBase64",
+              "source_files": "SCCategories/Classes/Foundation/NSData/NSData+SCBase64.{h,m}"
+            },
+            {
+              "name": "NSData+SCEncryptAndDecrypt",
+              "source_files": "SCCategories/Classes/Foundation/NSData/NSData+SCEncryptAndDecrypt.{h,m}"
+            },
+            {
+              "name": "NSData+SCHash",
+              "libraries": "z.1.2.5",
+              "source_files": "SCCategories/Classes/Foundation/NSData/NSData+SCHash.{h,m}"
+            },
+            {
+              "name": "NSData+SCJSSCValue",
+              "source_files": "SCCategories/Classes/Foundation/NSData/NSData+SCJSSCValue.{h,m}"
+            },
+            {
+              "name": "NSData+SCPackAndUnpack",
+              "libraries": "z.1.2.5",
+              "source_files": "SCCategories/Classes/Foundation/NSData/NSData+SCPackAndUnpack.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSDate",
+          "source_files": "SCCategories/Classes/Foundation/NSDate/NSDate+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSDate+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSDate/NSDate+SCBase.{h,m}"
+            },
+            {
+              "name": "NSDate+SCDateFormat",
+              "source_files": "SCCategories/Classes/Foundation/NSDate/NSDate+SCDateFormat.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSDecimalNumber",
+          "source_files": "SCCategories/Classes/Foundation/NSDecimalNumber/NSDecimalNumber+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSDecimalNumber+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSDecimalNumber/NSDecimalNumber+SCBase.{h,m}"
+            },
+            {
+              "name": "NSDecimalNumber+SCRoundNumber",
+              "source_files": "SCCategories/Classes/Foundation/NSDecimalNumber/NSDecimalNumber+SCRoundNumber.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSDictionary",
+          "source_files": "SCCategories/Classes/Foundation/NSDictionary/NSDictionary+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSDictionary+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSDictionary/NSDictionary+SCBase.{h,m}"
+            },
+            {
+              "name": "NSDictionary+SCJSSCDictionary",
+              "source_files": "SCCategories/Classes/Foundation/NSDictionary/NSDictionary+SCJSSCDictionary.{h,m}"
+            },
+            {
+              "name": "NSDictionary+SCPropertyList",
+              "dependencies": {
+                "SCCategories/Foundation/NSData/NSData+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSDictionary/NSDictionary+SCPropertyList.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSFileManager",
+          "source_files": "SCCategories/Classes/Foundation/NSFileManager/NSFileManager+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSFileManager+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSFileManager/NSFileManager+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSIndexPath",
+          "source_files": "SCCategories/Classes/Foundation/NSIndexPath/NSIndexPath+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSIndexPath+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSIndexPath/NSIndexPath+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSJSSCSerialization",
+          "source_files": "SCCategories/Classes/Foundation/NSJSSCSerialization/NSJSSCSerialization+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSJSSCSerialization+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSJSSCSerialization/NSJSSCSerialization+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSKeyedArchiver",
+          "source_files": "SCCategories/Classes/Foundation/NSKeyedArchiver/NSKeyedArchiver+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSKeyedArchiver+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSKeyedArchiver/NSKeyedArchiver+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSNotificationCenter",
+          "source_files": "SCCategories/Classes/Foundation/NSNotificationCenter/NSNotificationCenter+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSNotificationCenter+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSNotificationCenter/NSNotificationCenter+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSNumber",
+          "source_files": "SCCategories/Classes/Foundation/NSNumber/NSNumber+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSNumber+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSNumber/NSNumber+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSObject",
+          "source_files": "SCCategories/Classes/Foundation/NSObject/NSObject+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSObject+SCAssociatedValue",
+              "source_files": "SCCategories/Classes/Foundation/NSObject/NSObject+SCAssociatedValue.{h,m}"
+            },
+            {
+              "name": "NSObject+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSObject/NSObject+SCBase.{h,m}"
+            },
+            {
+              "name": "NSObject+SCKeyValueCoding",
+              "source_files": "SCCategories/Classes/Foundation/NSObject/NSObject+SCKeyValueCoding.{h,m}"
+            },
+            {
+              "name": "NSObject+SCKeyValueObserving",
+              "dependencies": {
+                "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSObject/NSObject+SCKeyValueObserving.{h,m}"
+            },
+            {
+              "name": "NSObject+SCSwizzleMethod",
+              "source_files": "SCCategories/Classes/Foundation/NSObject/NSObject+SCSwizzleMethod.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSParagraphStyle",
+          "source_files": "SCCategories/Classes/Foundation/NSParagraphStyle/NSParagraphStyle+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSParagraphStyle+SCBase",
+              "frameworks": "CoreText",
+              "source_files": "SCCategories/Classes/Foundation/NSParagraphStyle/NSParagraphStyle+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSSet",
+          "source_files": "SCCategories/Classes/Foundation/NSSet/NSSet+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSSet+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSSet/NSSet+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSString",
+          "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSString+SCBase",
+              "dependencies": {
+                "SCCategories/Foundation/NSData/NSData+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCBase.{h,m}"
+            },
+            {
+              "name": "NSString+SCBase64String",
+              "dependencies": {
+                "SCCategories/Foundation/NSData/NSData+SCBase64": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCBase64String.{h,m}"
+            },
+            {
+              "name": "NSString+SCCheck",
+              "dependencies": {
+                "SCCategories/Foundation/NSString/NSString+SCBase": [
+
+                ],
+                "SCCategories/Foundation/NSString/NSString+SCRegularExpression": [
+
+                ],
+                "SCCategories/Foundation/NSDictionary/NSDictionary+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCCheck.{h,m}"
+            },
+            {
+              "name": "NSString+SCChinese",
+              "dependencies": {
+                "SCCategories/Foundation/NSString/NSString+SCRegularExpression": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCChinese.{h,m}"
+            },
+            {
+              "name": "NSString+SCDrawing",
+              "frameworks": [
+                "UIKit",
+                "CoreGraphics"
+              ],
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCDrawing.{h,m}"
+            },
+            {
+              "name": "NSString+SCEmoji",
+              "dependencies": {
+                "SCCategories/Foundation/NSString/NSString+SCBase": [
+
+                ],
+                "SCCategories/Foundation/NSString/NSString+SCRegularExpression": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCEmoji.{h,m}"
+            },
+            {
+              "name": "NSString+SCHashString",
+              "dependencies": {
+                "SCCategories/Foundation/NSData/NSData+SCHash": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCHashString.{h,m}"
+            },
+            {
+              "name": "NSString+SCNumberValue",
+              "dependencies": {
+                "SCCategories/Foundation/NSNumber/NSNumber+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCNumberValue.{h,m}"
+            },
+            {
+              "name": "NSString+SCPathString",
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCPathString.{h,m}"
+            },
+            {
+              "name": "NSString+SCPinyin",
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCPinyin.{h,m}"
+            },
+            {
+              "name": "NSString+SCRegularExpression",
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCRegularExpression.{h,m}"
+            },
+            {
+              "name": "NSString+SCRoundNumberString",
+              "dependencies": {
+                "SCCategories/Foundation/NSDecimalNumber/NSDecimalNumber+SCRoundNumber": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCRoundNumberString.{h,m}"
+            },
+            {
+              "name": "NSString+SCSecurityString",
+              "dependencies": {
+                "SCCategories/Foundation/NSString/NSString+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCSecurityString.{h,m}"
+            },
+            {
+              "name": "NSString+SCTrimming",
+              "dependencies": {
+                "SCCategories/Foundation/NSString/NSString+SCRegularExpression": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCTrimming.{h,m}"
+            },
+            {
+              "name": "NSString+SCURLString",
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCURLString.{h,m}"
+            },
+            {
+              "name": "NSString+SCUTF32String",
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCUTF32String.{h,m}"
+            },
+            {
+              "name": "NSString+SCUUIDString",
+              "source_files": "SCCategories/Classes/Foundation/NSString/NSString+SCUUIDString.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSThread",
+          "source_files": "SCCategories/Classes/Foundation/NSThread/NSThread+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSThread+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSThread/NSThread+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSTimer",
+          "source_files": "SCCategories/Classes/Foundation/NSTimer/NSTimer+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSTimer+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSTimer/NSTimer+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSURLComponents",
+          "source_files": "SCCategories/Classes/Foundation/NSURLComponents/NSURLComponents+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSURLComponents+SCBase",
+              "source_files": "SCCategories/Classes/Foundation/NSURLComponents/NSURLComponents+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "NSValue",
+          "source_files": "SCCategories/Classes/Foundation/NSValue/NSValue+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "NSValue+SCBase",
+              "frameworks": "CoreGraphics",
+              "source_files": "SCCategories/Classes/Foundation/NSValue/NSValue+SCBase.{h,m}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UIKit",
+      "subspecs": [
+        {
+          "name": "UIApplication",
+          "source_files": "SCCategories/Classes/UIKit/UIApplication/UIApplication+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIApplication+SCBase",
+              "dependencies": {
+                "SCCategories/Foundation/NSString/NSString+SCPathString": [
+
+                ],
+                "SCCategories/UIKit/UIDevice/UIDevice+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIApplication/UIApplication+SCBase.{h,m}"
+            },
+            {
+              "name": "UIApplication+SCNetworkActivityIndicator",
+              "dependencies": {
+                "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIApplication/UIApplication+SCNetworkActivityIndicator.{h,m}"
+            },
+            {
+              "name": "UIApplication+SCTopViewController",
+              "source_files": "SCCategories/Classes/UIKit/UIApplication/UIApplication+SCTopViewController.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIBarButtonItem",
+          "source_files": "SCCategories/Classes/UIKit/UIBarButtonItem/UIBarButtonItem+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIBarButtonItem+SCBase",
+              "dependencies": {
+                "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue": [
+
+                ],
+                "SCCategories/UIKit/UIControl/UIControl+SCBase": [
+
+                ],
+                "SCCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+SCBase": [
+
+                ],
+                "SCCategories/UIKit/UIView/UIView+SCLayout": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIBarButtonItem/UIBarButtonItem+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIBezierPath",
+          "source_files": "SCCategories/Classes/UIKit/UIBezierPath/UIBezierPath+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIBezierPath+SCBase",
+              "source_files": "SCCategories/Classes/UIKit/UIBezierPath/UIBezierPath+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIButton",
+          "source_files": "SCCategories/Classes/UIKit/UIButton/UIButton+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIButton+SCBase",
+              "source_files": "SCCategories/Classes/UIKit/UIButton/UIButton+SCBase.{h,m}"
+            },
+            {
+              "name": "UIButton+SCConfigureForState",
+              "dependencies": {
+                "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue": [
+
+                ],
+                "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIButton/UIButton+SCConfigureForState.{h,m}"
+            },
+            {
+              "name": "UIButton+SCCountDown",
+              "dependencies": {
+                "SCCategories/UIKit/UIView/UIView+SCCountDown": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIButton/UIButton+SCCountDown.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UICollectionView",
+          "source_files": "SCCategories/Classes/UIKit/UICollectionView/UICollectionView+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UICollectionView+SCBase",
+              "dependencies": {
+                "SCCategories/Foundation/NSArray/NSArray+SCSort": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UICollectionView/UICollectionView+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UICollectionViewFlowLayout",
+          "source_files": "SCCategories/Classes/UIKit/UICollectionViewFlowLayout/UICollectionViewFlowLayout+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UICollectionViewFlowLayout+SCBase",
+              "source_files": "SCCategories/Classes/UIKit/UICollectionViewFlowLayout/UICollectionViewFlowLayout+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIColor",
+          "source_files": "SCCategories/Classes/UIKit/UIColor/UIColor+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIColor+SCBase",
+              "source_files": "SCCategories/Classes/UIKit/UIColor/UIColor+SCBase.{h,m}"
+            },
+            {
+              "name": "UIColor+SCCMYKColor",
+              "dependencies": {
+                "SCCategories/UIKit/UIColor/UIColor+SCColorConvert": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIColor/UIColor+SCCMYKColor.{h,m}"
+            },
+            {
+              "name": "UIColor+SCColorConvert",
+              "source_files": "SCCategories/Classes/UIKit/UIColor/UIColor+SCColorConvert.{h,m}"
+            },
+            {
+              "name": "UIColor+SCHSBColor",
+              "dependencies": {
+                "SCCategories/UIKit/UIColor/UIColor+SCColorConvert": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIColor/UIColor+SCHSBColor.{h,m}"
+            },
+            {
+              "name": "UIColor+SCHSLColor",
+              "dependencies": {
+                "SCCategories/UIKit/UIColor/UIColor+SCColorConvert": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIColor/UIColor+SCHSLColor.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIControl",
+          "source_files": "SCCategories/Classes/UIKit/UIControl/UIControl+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIControl+SCBase",
+              "dependencies": {
+                "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIControl/UIControl+SCBase.{h,m}"
+            },
+            {
+              "name": "UIControl+SCRepeatClickPrevention",
+              "dependencies": {
+                "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue": [
+
+                ],
+                "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIControl/UIControl+SCRepeatClickPrevention.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIDevice",
+          "source_files": "SCCategories/Classes/UIKit/UIDevice/UIDevice+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIDevice+SCBase",
+              "dependencies": {
+                "SCCategories/Foundation/NSString/NSString+SCUUIDString": [
+
+                ],
+                "SCCategories/Foundation/NSNumber/NSNumber+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIDevice/UIDevice+SCBase.{h,m}"
+            },
+            {
+              "name": "UIDevice+SCCPUInfo",
+              "source_files": "SCCategories/Classes/UIKit/UIDevice/UIDevice+SCCPUInfo.{h,m}"
+            },
+            {
+              "name": "UIDevice+SCDiskInfo",
+              "source_files": "SCCategories/Classes/UIKit/UIDevice/UIDevice+SCDiskInfo.{h,m}"
+            },
+            {
+              "name": "UIDevice+SCMemoryInfo",
+              "source_files": "SCCategories/Classes/UIKit/UIDevice/UIDevice+SCMemoryInfo.{h,m}"
+            },
+            {
+              "name": "UIDevice+SCNetworkInfo",
+              "source_files": "SCCategories/Classes/UIKit/UIDevice/UIDevice+SCNetworkInfo.{h,m}"
+            },
+            {
+              "name": "UIDevice+SCSIMInfo",
+              "frameworks": "CoreTelephony",
+              "source_files": "SCCategories/Classes/UIKit/UIDevice/UIDevice+SCSIMInfo.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIFont",
+          "source_files": "SCCategories/Classes/UIKit/UIFont/UIFont+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIFont+SCBase",
+              "frameworks": [
+                "CoreText",
+                "CoreGraphics"
+              ],
+              "source_files": "SCCategories/Classes/UIKit/UIFont/UIFont+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIGestureRecognizer",
+          "source_files": "SCCategories/Classes/UIKit/UIGestureRecognizer/UIGestureRecognizer+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIGestureRecognizer+SCBase",
+              "dependencies": {
+                "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIGestureRecognizer/UIGestureRecognizer+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIImage",
+          "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIImage+SCBase",
+              "dependencies": {
+                "SCCategories/CoreGraphic": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCBase.{h,m}"
+            },
+            {
+              "name": "UIImage+SCBlurredImage",
+              "frameworks": "Accelerate",
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCBlurredImage.{h,m}"
+            },
+            {
+              "name": "UIImage+SCColoredImage",
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCColoredImage.{h,m}"
+            },
+            {
+              "name": "UIImage+SCEmojiImage",
+              "frameworks": "CoreText",
+              "dependencies": {
+                "SCCategories/Foundation/NSString/NSString+SCEmoji": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCEmojiImage.{h,m}"
+            },
+            {
+              "name": "UIImage+SCGIFImage",
+              "frameworks": "ImageIO",
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCGIFImage.{h,m}"
+            },
+            {
+              "name": "UIImage+SCGradientImage",
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCGradientImage.{h,m}"
+            },
+            {
+              "name": "UIImage+SCImageBorder",
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCImageBorder.{h,m}"
+            },
+            {
+              "name": "UIImage+SCImageCompression",
+              "dependencies": {
+                "SCCategories/UIKit/UIImage/UIImage+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCImageCompression.{h,m}"
+            },
+            {
+              "name": "UIImage+SCImageCropped",
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCImageCropped.{h,m}"
+            },
+            {
+              "name": "UIImage+SCImageFixed",
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCImageFixed.{h,m}"
+            },
+            {
+              "name": "UIImage+SCImageRotation",
+              "frameworks": "Accelerate",
+              "dependencies": {
+                "SCCategories/CoreGraphic": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCImageRotation.{h,m}"
+            },
+            {
+              "name": "UIImage+SCRoundedImage",
+              "dependencies": {
+                "SCCategories/CoreGraphic": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIImage/UIImage+SCRoundedImage.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UINavigationBar",
+          "source_files": "SCCategories/Classes/UIKit/UINavigationBar/UINavigationBar+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UINavigationBar+SCBase",
+              "dependencies": {
+                "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue": [
+
+                ],
+                "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UINavigationBar/UINavigationBar+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UINavigationController",
+          "source_files": "SCCategories/Classes/UIKit/UINavigationController/UINavigationController+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UINavigationController+SCBase",
+              "source_files": "SCCategories/Classes/UIKit/UINavigationController/UINavigationController+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIScreen",
+          "source_files": "SCCategories/Classes/UIKit/UIScreen/UIScreen+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIScreen+SCBase",
+              "dependencies": {
+                "SCCategories/UIKit/UIDevice/UIDevice+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIScreen/UIScreen+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIScrollView",
+          "source_files": "SCCategories/Classes/UIKit/UIScrollView/UIScrollView+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIScrollView+SCBase",
+              "dependencies": {
+                "SCCategories/CoreGraphic": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIScrollView/UIScrollView+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UISlider",
+          "source_files": "SCCategories/Classes/UIKit/UISlider/UISlider+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UISlider+SCBase",
+              "source_files": "SCCategories/Classes/UIKit/UISlider/UISlider+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UISwipeGestureRecognizer",
+          "source_files": "SCCategories/Classes/UIKit/UISwipeGestureRecognizer/UISwipeGestureRecognizer+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UISwipeGestureRecognizer+SCBase",
+              "dependencies": {
+                "SCCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UISwipeGestureRecognizer/UISwipeGestureRecognizer+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UITabBar",
+          "source_files": "SCCategories/Classes/UIKit/UITabBar/UITabBar+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UITabBar+SCBase",
+              "dependencies": {
+                "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue": [
+
+                ],
+                "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UITabBar/UITabBar+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UITableView",
+          "source_files": "SCCategories/Classes/UIKit/UITableView/UITableView+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UITableView+SCBase",
+              "dependencies": {
+                "SCCategories/Foundation/NSArray/NSArray+SCSort": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UITableView/UITableView+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UITableViewCell",
+          "source_files": "SCCategories/Classes/UIKit/UITableViewCell/UITableViewCell+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UITableViewCell+SCBase",
+              "dependencies": {
+                "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UITableViewCell/UITableViewCell+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UITextField",
+          "source_files": "SCCategories/Classes/UIKit/UITextField/UITextField+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UITextField+SCBase",
+              "source_files": "SCCategories/Classes/UIKit/UITextField/UITextField+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UITextView",
+          "source_files": "SCCategories/Classes/UIKit/UITextView/UITextView+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UITextView+SCBase",
+              "source_files": "SCCategories/Classes/UIKit/UITextView/UITextView+SCBase.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIView",
+          "source_files": "SCCategories/Classes/UIKit/UIView/UIView+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIView+SCBase",
+              "source_files": "SCCategories/Classes/UIKit/UIView/UIView+SCBase.{h,m}"
+            },
+            {
+              "name": "UIView+SCCountDown",
+              "source_files": "SCCategories/Classes/UIKit/UIView/UIView+SCCountDown.{h,m}"
+            },
+            {
+              "name": "UIView+SCLayout",
+              "dependencies": {
+                "SCCategories/UIKit/UIView/UIView+SCBase": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIView/UIView+SCLayout.{h,m}"
+            },
+            {
+              "name": "UIView+SCNibView",
+              "source_files": "SCCategories/Classes/UIKit/UIView/UIView+SCNibView.{h,m}"
+            },
+            {
+              "name": "UIView+SCShadow",
+              "source_files": "SCCategories/Classes/UIKit/UIView/UIView+SCShadow.{h,m}"
+            },
+            {
+              "name": "UIView+SCShakeAnimation",
+              "source_files": "SCCategories/Classes/UIKit/UIView/UIView+SCShakeAnimation.{h,m}"
+            },
+            {
+              "name": "UIView+SCSnapshot",
+              "source_files": "SCCategories/Classes/UIKit/UIView/UIView+SCSnapshot.{h,m}"
+            },
+            {
+              "name": "UIView+SCTouchInset",
+              "dependencies": {
+                "SCCategories/Foundation/NSObject/NSObject+SCSwizzleMethod": [
+
+                ],
+                "SCCategories/Foundation/NSObject/NSObject+SCAssociatedValue": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/UIKit/UIView/UIView+SCTouchInset.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIViewController",
+          "source_files": "SCCategories/Classes/UIKit/UIViewController/UIViewController+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIViewController+SCBase",
+              "source_files": "SCCategories/Classes/UIKit/UIViewController/UIViewController+SCBase.{h,m}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "QuartzCore",
+      "subspecs": [
+        {
+          "name": "CALayer",
+          "source_files": "SCCategories/Classes/QuartzCore/CALayer/CALayer+SCCategories.{h,m}",
+          "subspecs": [
+            {
+              "name": "CALayer+SCBase",
+              "dependencies": {
+                "SCCategories/CoreGraphic": [
+
+                ]
+              },
+              "source_files": "SCCategories/Classes/QuartzCore/CALayer/CALayer+SCBase.{h,m}"
+            },
+            {
+              "name": "CALayer+SCFadeAnimation",
+              "frameworks": "UIKit",
+              "source_files": "SCCategories/Classes/QuartzCore/CALayer/CALayer+SCFadeAnimation.{h,m}"
+            },
+            {
+              "name": "CALayer+SCLayout",
+              "source_files": "SCCategories/Classes/QuartzCore/CALayer/CALayer+SCLayout.{h,m}"
+            },
+            {
+              "name": "CALayer+SCShadow",
+              "frameworks": "UIKit",
+              "source_files": "SCCategories/Classes/QuartzCore/CALayer/CALayer+SCShadow.{h,m}"
+            },
+            {
+              "name": "CALayer+SCSnapshot",
+              "frameworks": "UIKit",
+              "source_files": "SCCategories/Classes/QuartzCore/CALayer/CALayer+SCSnapshot.{h,m}"
+            },
+            {
+              "name": "CALayer+SCTransform",
+              "source_files": "SCCategories/Classes/QuartzCore/CALayer/CALayer+SCTransform.{h,m}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CoreGraphic",
+      "source_files": "SCCategories/Classes/CoreGraphic/*.{h,m}"
+    },
+    {
+      "name": "Macro",
+      "source_files": "SCCategories/Classes/Macro/*.{h,m}"
+    }
+  ]
+}
